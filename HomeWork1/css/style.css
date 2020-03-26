@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.page {
+    display: flex;
+}
+
+/* sidebar */
+
+.page__sidebar--sticky {
+    background: url('../img/photo_2020-03-11_14-55-11.jpg') center no-repeat;
+    width: 25%;
+    height: 100vh;
+    display: block;
+    position: sticky;
+    top: 0;
+
+ 
+
+}
+
+.page__content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__icons {
+    color: white;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.sidebar__icons:hover {
+    color: rgb(0, 204, 255);
+    transition: ease-in 0.2s;
+}
+
+.sidebar__img {
+    text-align: center;
+    margin-top: 30%;
+}
+
+.sidebar__description {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30%;
+}
+
+.sidebar__description p {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* sidebar-end */
+
+
+/* page-content */
+
+.content__header-menu {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid rgb(223, 221, 221);
+}
+
+.content__header-menu a {
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 14px;
+ font-weight: 900;
+ color: black;
+ margin-left: 30px;
+
+}
+
+.content__header-menu a:hover {
+    color: rgb(38, 194, 214);
+    transition: ease-in 0.2s;
+}
+
+.arrow {
+   font-size: 7px;
+   color: gray;
+   margin-left: 3px;
+   transform: translateY(-3px);
+} 
+
+.section {
+border-left: 20px solid rgb(223, 221, 221);
+border-right: 20px solid rgb(223, 221, 221);
+border-bottom: 20px solid rgb(223, 221, 221);
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+ margin-left: 15%;
+ width: 70%;
+}
+
+.section__name {
+ padding-top: 60px;
+ padding-bottom: 20px;
+ 
+ 
+}
+
+.section__name h1 {
+ font-size: 40px;
+ line-height: 0.9em;
+}
+
+.italic {
+  font-style: italic;
+  color: gray;
+}
+
+.section__view {
+display: flex;
+justify-content: space-between;
+width: 70%;
+    
+}
+
+.view__item {
+display: flex;
+
+}
+
+.view-icon {
+    font-size: 11px;
+    color: gray;
+    font-weight: 900;
+}
+
+
+.icon-text {
+ font-size: 11px;
+ color: gray;
+ margin-left: 8px;
+ font-weight: 900;
+}
+
+.section__description p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.section__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__description p {
+    font-size: 20px;
+    color: gray;
+}
+
+.wrapper__description img {
+    float: right;
+}
+
+.section__link {
+padding-top: 30px;
+padding-bottom: 80px;
+display: flex;
+justify-content: flex-end;
+}
+
+.section__link a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 11px;
+}
+
+.section__link a:hover {
+    color: rgb(38, 194, 214);
+    transition: ease-in 0.2s;
+}
+
+
+.link-icon {
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.section__link a::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 2px;
+    background-color: gray;
+    margin-top: 5px;
+}
+
+/* page-content end */
+
+/* media quaries */
+@media only screen and (max-width: 900px) {
+ 
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page__sidebar--sticky {
+    width: 100%;
+    height: 10%;
+    position: static;
+    background: #000;
+
+}
+
+
+.sidebar__header {
+    display: none;
+}
+
+
+.sidebar__description {
+    display: none;
+}
+
+.sidebar__img {
+    margin: 0 auto;
+    width: 50%;;
+}
+
+.page__content {
+    width: 100%;
+}
+
+.content__header-menu {
+    padding: 15px;
+}
+
+.content__header-menu a {
+    font-size: 15px;
+    margin-left: 20px;
+   }
+
+ .container {
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+
+ .section {
+ border-left: 1px solid rgb(223, 221, 221);
+ border-right: 1px solid rgb(223, 221, 221);
+ border-bottom: 1px solid rgb(223, 221, 221);
+ padding: 20px;
+ }
+
+ .wrapper__description img {
+     display: none;
+ }
+
+ .section__link {
+     justify-content: center;
+ }
+
+
+}
+
+
+/* media quaries end */
